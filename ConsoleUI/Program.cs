@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleUI
 {
@@ -13,7 +14,7 @@ namespace ConsoleUI
             //Declare Room Variables
             string room1 = "Prison Cell";
             string room2 = "Corridor";
-            string room3 = "Interogation Room";
+            string room3 = "Interrogation";
             string room4 = "HallWay";
             string room5 = "Exit";
 
@@ -54,35 +55,86 @@ namespace ConsoleUI
             
             //Get user selection
             int menu = int.Parse(Console.ReadLine());
+
+                      
                         
             //Switich statement for menu selection
             switch(menu)
             {
                 case 1:
+                    //Display room variables
                     Console.WriteLine("You chose to display rooms: " + room1 + ", " + room2 + ", "+ room3 + ", " + room4 + ", " + room5 + "." );
+                                        
+                    //Declare text document variable
+                    string roomFile = @"C:\Users\ncmik\Desktop\Rooms.txt";
+                    
+                    //Call file and add to a list
+                    List<string> roomLines = File.ReadAllLines(roomFile).ToList();
+                    
+                    //foreach loop
+                    foreach (string roomLine in roomLines)
+                    {
+                        Console.WriteLine(roomLine);
+                    }
+
                     break;
 
                 case 2:
+                    //Display weapon variables
                     Console.WriteLine("You chose to display Weapons: " + weapon1 + ", " + weapon2 + ", " + weapon3 + ", " + weapon4 + ".");
+
+                    //Declare text document variable
+                    string weaponFile = @"C:\Users\ncmik\Desktop\Weapons.txt";
+
+                    //Call file and add to a list
+                    List<string> weaponLines = File.ReadAllLines(weaponFile).ToList();
+
+                    //foreach loop
+                    foreach (string weaponLine in weaponLines)
+                    {
+                        Console.WriteLine(weaponLine);
+                    }
+
                     break;
 
                 case 3:
+                    //Display potion variables
                     Console.WriteLine("You chose to display Potions: " + potion1 + ", " + potion2 + ".");
+                    
                     break;
 
                 case 4:
+                    //Display treasure variables
                     Console.WriteLine("You chose to display Treasure: " + treasure1 + ", " + treasure2 + ", " + treasure3 + ".");
+                    
                     break;
 
                 case 5:
+                    //Dispaly item variables
                     Console.WriteLine("You chose to dispaly Items: " + item1 + ", " + item2 + ", " + item3 + ", " + item4 + ".");
+                    
                     break;
 
                 case 6:
+                    //Dispaly mob variables
                     Console.WriteLine("You chose to display Mob: " + mob1 + ", " + mob2 + ", " + mob3 + ", " + mob4 + ", " + mob5 + ".");
+
+                    //Declare text document variable
+                    string mobFile = @"C:\Users\ncmik\Desktop\Mobs.txt";
+
+                    //Call file and add to a list
+                    List<string> mobLines = File.ReadAllLines(mobFile).ToList();
+
+                    //foreach loop
+                    foreach (string mobLine in mobLines)
+                    {
+                        Console.WriteLine(mobLine);
+                    }
+
                     break;
 
                 case 7:
+                    //Exit game
                     Environment.Exit(0);
                     break;
 
