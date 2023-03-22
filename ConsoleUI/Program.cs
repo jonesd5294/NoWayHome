@@ -17,10 +17,8 @@ namespace ConsoleUI
 
 
             //Declare Weapon Variables
-            string weapon1 = "Bow";
-            string weapon2 = "Knife";
-            string weapon3 = "Gun";
-            string weapon4 = "RPG";
+            string weapon1 = "", weapon2 = "", weapon3 = "", weapon4 = "";
+           
 
             //Declare Potion Variables
             string potion1 = "Water";
