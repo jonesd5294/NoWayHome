@@ -1,0 +1,5 @@
+Prison Cell, A dark, cold room where you have been starved and beaten.
+Corridor, A long passage with multiple prison cells.
+Interrogation, A low lit room, blood splattered walls, chair with restraints, and a table holding tools.
+Hallway, A hallway that leads to the exit.
+Exit, An exit to the inside of the camp.

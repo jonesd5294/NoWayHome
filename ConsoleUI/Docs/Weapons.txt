@@ -1,0 +1,6 @@
+Bow, a ranged weapon system, that shoots arrows.
+Knife, a peircing weapon used to close quarters.
+AK-47, a ranged weapon system, uses bullet projectiles.
+RPG, a ranged weapon system, uses exposive rockets.
+
+ 

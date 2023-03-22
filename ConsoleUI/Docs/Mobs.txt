@@ -1,0 +1,5 @@
+Snake, poisonous and agile; one bite will slow you down.
+Panther, a man hunting large cat.
+Captors, your enemies want to recapture you.
+Local, working for your captors.
+Scorpion, poisonous creature that likes hiding in dark places.

@@ -38,26 +38,24 @@ namespace ConsoleUI
             //Get user selection
             int menu = int.Parse(Console.ReadLine());
 
-                      
-                        
             //Switich statement for menu selection
             switch(menu)
             {
                 case 1:
                     //Display room variables
                     Console.WriteLine("You chose to display rooms: " + room1 + ", " + room2 + ", "+ room3 + ", " + room4 + ", " + room5 + "." );
-                                        
-                    //Declare text document variable
-                    string roomFile = @"C:\Users\ncmik\Desktop\Rooms.txt";
-                    
-                    //Call file and add to a list
-                    List<string> roomLines = File.ReadAllLines(roomFile).ToList();
-                    
-                    //foreach loop
-                    foreach (string roomLine in roomLines)
+
+                    inputFile = File.OpenText(@"../../../ConsoleUI/Docs/Rooms.txt");                    
+
+                    //While Loop and text document read
+                    while (!inputFile.EndOfStream)
                     {
-                        Console.WriteLine(roomLine);
+                        rooms = (inputFile.ReadLine());
+                        Console.WriteLine(rooms);
                     }
+
+                    //close file
+                    inputFile.Close();
 
                     break;
 
@@ -65,17 +63,17 @@ namespace ConsoleUI
                     //Display weapon variables
                     Console.WriteLine("You chose to display Weapons: " + weapon1 + ", " + weapon2 + ", " + weapon3 + ", " + weapon4 + ".");
 
-                    //Declare text document variable
-                    string weaponFile = @"C:\Users\ncmik\Desktop\Weapons.txt";
+                    inputFile = File.OpenText(@"../../../ConsoleUI/Docs/Weapons.txt");
 
-                    //Call file and add to a list
-                    List<string> weaponLines = File.ReadAllLines(weaponFile).ToList();
-
-                    //foreach loop
-                    foreach (string weaponLine in weaponLines)
+                    //While Loop and text document read
+                    while (!inputFile.EndOfStream)
                     {
-                        Console.WriteLine(weaponLine);
+                        weapons = (inputFile.ReadLine());
+                        Console.WriteLine(weapons);
                     }
+
+                    //close file
+                    inputFile.Close();
 
                     break;
 
@@ -101,17 +99,17 @@ namespace ConsoleUI
                     //Dispaly mob variables
                     Console.WriteLine("You chose to display Mob: " + mob1 + ", " + mob2 + ", " + mob3 + ", " + mob4 + ", " + mob5 + ".");
 
-                    //Declare text document variable
-                    string mobFile = @"C:\Users\ncmik\Desktop\Mobs.txt";
+                    inputFile = File.OpenText(@"../../../ConsoleUI/Docs/Mobs.txt");
 
-                    //Call file and add to a list
-                    List<string> mobLines = File.ReadAllLines(mobFile).ToList();
-
-                    //foreach loop
-                    foreach (string mobLine in mobLines)
+                    //While Loop and text document read
+                    while (!inputFile.EndOfStream)
                     {
-                        Console.WriteLine(mobLine);
+                        mobs = (inputFile.ReadLine());
+                        Console.WriteLine(mobs);
                     }
+
+                    //close file
+                    inputFile.Close();
 
                     break;
 
@@ -123,7 +121,8 @@ namespace ConsoleUI
 
                 default:
                     Console.WriteLine("Error, please chose a correct option.");
-                    break;
+                    break;                                             
+            
             }
 
 
