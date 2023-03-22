@@ -12,11 +12,8 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //Declare Room Variables
-            string room1 = "", room2 = "";
-            string room2 = "Corridor";
-            string room3 = "Interrogation";
-            string room4 = "HallWay";
-            string room5 = "Exit";
+            string room1 = "", room2 = "", room3 ="", room4 = "", room5 = "",;
+            
 
 
             //Declare Weapon Variables
