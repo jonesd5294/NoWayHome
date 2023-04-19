@@ -7,7 +7,7 @@ using System.IO;
 
 namespace WorldEngine
 {
-    public class Class1
+    public static class Engine
     {
     }
 }
