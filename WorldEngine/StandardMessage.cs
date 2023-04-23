@@ -9,7 +9,11 @@ namespace WorldEngine
 {
     public static class StandardMessage
     {
-        
+        public static void DisplayWelcome()
+        {
+            Console.WriteLine("Welcome to NoWayHome");
+            Console.WriteLine("--------------------");
+        }
 
     }
 }

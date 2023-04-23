@@ -12,27 +12,13 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //Declare Room Variables
-            string room1 = "", room2 = "", room3 ="", room4 = "", room5 = "",;
             
-            //Declare Weapon Variables
-            string weapon1 = "", weapon2 = "", weapon3 = "", weapon4 = "";
-           
-            //Declare Potion Variables
-            string potion1 = "", potion2 = "";
+
+            StandardMessage.DisplayWelcome();
+
             
-            //Declare Treasure Variables
-            string treasure1 = "", treasure2 = "", treasure3 = "";
-           
-            //Declare Item Variables
-            string item1 = "", item2 = "", item3 = "", item4 = "";
-
-            //Declare Mob Variables
-            string mob1 = "", mob2 = "", mob3 = "", mob4 = "", mob5 = "";
-
             //Intro and Menu Selection
-            Console.WriteLine("Welcome to NoWayHome");
-            Console.WriteLine("--------------------");
+           
             Console.WriteLine("Enter a selection");
             Console.WriteLine("1 - Rooms, 2 - Weapons, 3 - Potions, 4 Treasure, 5 Items, 6 Mob, 7 Exit");
             
