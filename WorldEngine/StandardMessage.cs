@@ -7,7 +7,7 @@ using System.IO;
 
 namespace WorldEngine
 {
-    public static class Engine
+    public static class StandardMessage
     {
         
 
